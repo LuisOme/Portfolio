@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/168c892094.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Dinámico - Luis Omeñacas</title>
+</head>
+
+<body>
+
+
+
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                <h1>Luis <span>Omeñaca</span></h1>
+                <p> PhD. Student</p>
+            </div>
+
+            <form action="">
+                <input type="text" class="barra-busqueda" id = "barra-busqueda" placeholder="Buscar">
+            </form>
+
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Persona</a>
+                <a href="#">Laser</a>
+                <a href="#">Python</a>
+                <a href="#">Formula1</a>
+                <a href="#">HTML</a>
+
+            </div>
+        </header>
+            
+
+
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="persona" 
+            data-etiquetas="Persona Luis Omeñaca"
+            data-descripcion="1. Luis Omeñaca, estudiante de Doctorado.">
+
+                <div class="item-contenido">
+                    <img src="img/imagenLuis.png" alt="Imagen Luis">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="laser" 
+            data-etiquetas="Laser Investigacion"
+            data-descripcion="2. Experto en procesado láser">
+
+                <div class="item-contenido">
+                    <img src="img/Laser.jpg" alt="Laser Investigacion">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="formula1" 
+            data-etiquetas="Deporte Formula1 Tecnologia Software"
+            data-descripcion="3. Desarrollo de Software para Fórmula 1.">
+
+                <div class="item-contenido">
+                    <img src="img/F1.jpg" alt="Imagen Data Formula 1">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="html" 
+            data-etiquetas="Programacion HTML CSS Software"
+            data-descripcion="4. Desarrollo de páginas Web.">
+
+                <div class="item-contenido">
+                    <img src="img/htmlII.jpg" alt="Imagen HTML">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="python" 
+            data-etiquetas="Programacion Python"
+            data-descripcion="5. Desarrollo de Software en Python.">
+
+                <div class="item-contenido">
+                    <img src="img/Python.jpg" alt="Imagen Logo de Python">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fa-solid fa-circle-xmark"></i></button>
+                <img src="img/imagenLuis.png" alt="">
+            </div>
+            <p class="descripcion">Luis Omeñaca, estudiante de Doctorado.</p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="http://github.com/LuisOme" target="_blank" class="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                
+                <div class="contenedor-icono">
+                <a href="http://linkedin.com/in/luisomenacasegura" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="http://researchgate.net/profile/Luis-Omenaca/" target="_blank" class="researchgate">
+                        <i class="fa-brands fa-researchgate"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="creado-por">
+                <p>Sitio web desarrollado por Luis Omeñaca</p>
+            </div>
+
+            
+        </footer>
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
